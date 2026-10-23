@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="swiftDBGradient" x1="120" y1="80" x2="904" y2="944" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#007AFF"/>
+      <stop offset="1" stop-color="#0A1A2F"/>
+    </linearGradient>
+    <clipPath id="appIconShape">
+      <rect width="1024" height="1024" rx="220"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#appIconShape)">
+    <rect width="1024" height="1024" fill="url(#swiftDBGradient)"/>
+
+    <!-- A broad, two-tier database silhouette sized for legibility at 16 px. -->
+    <path d="M192 316H832V686C832 776 689 840 512 840C335 840 192 776 192 686V316Z" fill="white"/>
+    <ellipse cx="512" cy="316" rx="320" ry="116" fill="white"/>
+    <ellipse cx="512" cy="316" rx="244" ry="68" fill="url(#swiftDBGradient)"/>
+
+    <!-- The single rising channel turns the tier break into forward data motion. -->
+    <path d="M198 520C318 608 449 626 526 594L830 418" stroke="url(#swiftDBGradient)" stroke-width="64" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
