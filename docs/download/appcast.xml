@@ -3,6 +3,14 @@
     <channel>
         <title>SwiftDB</title>
         <item>
+            <title>1.0.2</title>
+            <pubDate>Sat, 24 Oct 2026 01:19:55 +0700</pubDate>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://phinq-omt.github.io/SwiftDB/download/SwiftDB-1.0.2.dmg" length="38326143" type="application/octet-stream" sparkle:edSignature="uGkFylxrG+MYrXUMiPKH8Vx4hoFaTRaXh6oIbfp4uYz9QD7JPfXipvjWdKUZDFRvPGs0dqfA4abqxFIG3S8rAg=="/>
+        </item>
+        <item>
             <title>1.0.1</title>
             <pubDate>Fri, 23 Oct 2026 23:39:20 +0700</pubDate>
             <sparkle:version>1</sparkle:version>
