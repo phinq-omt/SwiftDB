@@ -143,20 +143,63 @@ figcaption,
 .points { padding-left: 1.15rem; }
 .points li { margin: 0.35rem 0; }
 
-.frame {
-  display: grid;
-  place-items: center;
-  margin: 0;
-  background: var(--frame);
-  border: 1px dashed var(--line);
-  color: var(--muted);
-  font-weight: 600;
+.hero {
+  width: min(100% - 2rem, var(--max));
+  margin: 1.75rem auto 0;
 }
-.shot { aspect-ratio: 16 / 10; }
-.clip { aspect-ratio: 16 / 9; }
 
-figure { margin: 1.5rem 0 0; }
-figcaption { margin-top: 0.4rem; font-size: 0.9rem; }
+.stage {
+  position: relative;
+  width: 100%;
+  margin-inline: auto;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 16px 40px rgba(10, 26, 47, 0.14);
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+}
+
+.slide-orders { animation: home-orders 12s infinite; }
+.slide-query { animation: home-query 12s infinite; }
+.slide-palette { animation: home-palette 12s infinite; }
+
+@keyframes home-orders {
+  0%, 28% { opacity: 1; }
+  36%, 92% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes home-query {
+  0%, 28% { opacity: 0; }
+  36%, 62% { opacity: 1; }
+  70%, 100% { opacity: 0; }
+}
+
+@keyframes home-palette {
+  0%, 62% { opacity: 0; }
+  70%, 92% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slide { animation: none; opacity: 0; }
+  .slide-orders { opacity: 1; }
+}
+
+.hero figcaption {
+  margin-top: 0.55rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
 
 main { padding-block: 2rem 0; }
 

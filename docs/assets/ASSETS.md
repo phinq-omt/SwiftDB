@@ -1,15 +1,20 @@
-# Replacing placeholders
+# Homepage frames
 
-The homepage reserves two frames. Neither file is loaded until you add it.
+The homepage crossfades three WebP frames of the Lumen Atelier sample database. The files are 2160×1350.
 
-| Frame | Ratio | Suggested size | Replace with |
-| --- | --- | --- | --- |
-| Screenshot | 16:10 | 1440 × 900 | Compressed WebP or PNG |
-| Video | 16:9 | 1280 × 720 | MP4, `preload="none"`, with a poster image |
+| File | What it shows |
+| --- | --- |
+| `home/orders.webp` | The `orders` table, with the sidebar open. This is also the social preview image. |
+| `home/query.webp` | A SQL query and its formatted results. |
+| `home/palette.webp` | The command palette over that query. |
 
-Set `width` and `height` to the file’s pixel size so the layout does not jump. Write alt text that describes the interface shown. Remove `role="img"` from the frame and the “Placeholder — replace later” caption.
+`index.html` cycles them over 12 seconds. `prefers-reduced-motion` keeps `orders.webp` still.
 
-Keep credentials and private records out of screenshots and video.
+The sample data is `Scripts/Demo/lumen.sql`. Rebuild the SQLite file with:
+
+```sh
+sqlite3 Scripts/Demo/Lumen.sqlite < Scripts/Demo/lumen.sql
+```
 
 Serve the site locally with:
 

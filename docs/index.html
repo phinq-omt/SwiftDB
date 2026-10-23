@@ -10,8 +10,10 @@
   <meta property="og:title" content="SwiftDB — a native macOS database workspace">
   <meta property="og:description" content="One Mac app for SQL, Redis, MongoDB, Firebase, and Cloudflare R2. Credentials stay in Keychain.">
   <meta property="og:url" content="https://phinq-omt.github.io/SwiftDB/">
-  <meta property="og:image" content="https://phinq-omt.github.io/SwiftDB/assets/social.png">
-  <meta property="og:image:alt" content="SwiftDB app icon">
+  <meta property="og:image" content="https://phinq-omt.github.io/SwiftDB/assets/home/orders.webp">
+  <meta property="og:image:width" content="2160">
+  <meta property="og:image:height" content="1350">
+  <meta property="og:image:alt" content="SwiftDB showing the orders table for the Lumen Atelier sample database.">
   <link rel="canonical" href="https://phinq-omt.github.io/SwiftDB/">
   <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/site.css">
@@ -44,49 +46,48 @@
       </nav>
     </div>
   </header>
-  <main id="main" class="wrap">
-    <h1>A native Mac workspace for your databases.</h1>
-    <p class="lede">Open a connection, browse tables, and run SQL. Redis, MongoDB, Firebase, and R2 use the same app.</p>
-    <p class="meta">Version <span data-swiftdb-version>1.0.1 (1)</span>. Requires macOS 14 or later.</p>
-    <p class="actions">
-      <a class="button" href="download/SwiftDB.dmg">Download</a>
-      <a href="install/">How to install and update</a>
-    </p>
-    <ul class="engines">
-      <li>SQLite</li>
-      <li>PostgreSQL</li>
-      <li>MySQL</li>
-      <li>MariaDB</li>
-      <li>Redis</li>
-      <li>MongoDB</li>
-      <li>Cloud Firestore</li>
-      <li>Realtime Database</li>
-      <li>Cloudflare R2</li>
-    </ul>
+  <main id="main">
+    <div class="wrap">
+      <h1>A native Mac workspace for your databases.</h1>
+      <p class="lede">Open a connection, browse tables, and run SQL. Redis, MongoDB, Firebase, and R2 use the same app.</p>
+      <p class="meta">Version <span data-swiftdb-version>1.0.1 (1)</span>. Requires macOS 14 or later.</p>
+      <p class="actions">
+        <a class="button" href="download/SwiftDB.dmg">Download</a>
+        <a href="install/">How to install and update</a>
+      </p>
+      <ul class="engines">
+        <li>SQLite</li>
+        <li>PostgreSQL</li>
+        <li>MySQL</li>
+        <li>MariaDB</li>
+        <li>Redis</li>
+        <li>MongoDB</li>
+        <li>Cloud Firestore</li>
+        <li>Realtime Database</li>
+        <li>Cloudflare R2</li>
+      </ul>
+    </div>
 
-    <figure>
-      <div class="frame shot" role="img" aria-label="Placeholder for a screenshot of the SwiftDB workspace.">
-        <span>Screenshot</span>
+    <figure class="hero">
+      <div class="stage">
+        <img class="slide slide-orders" src="assets/home/orders.webp" width="2160" height="1350" alt="SwiftDB showing the orders table for Lumen Atelier, a sample shop database.">
+        <img class="slide slide-query" src="assets/home/query.webp" width="2160" height="1350" alt="A SQL query in SwiftDB listing recent Lumen Atelier orders and totals.">
+        <img class="slide slide-palette" src="assets/home/palette.webp" width="2160" height="1350" alt="The SwiftDB command palette offering New Connection, New Query, New Table, and New View.">
       </div>
-      <figcaption>Placeholder — replace later</figcaption>
+      <figcaption>Lumen Atelier, the sample database: browse orders, run SQL, then jump with ⌘K.</figcaption>
     </figure>
 
-    <h2>What you can do</h2>
-    <ul class="points">
-      <li>Each connection opens in a native macOS window tab.</li>
-      <li>Browse tables, edit structure, and run SQL in document tabs.</li>
-      <li><kbd>⌘K</kbd> searches commands, connections, and database objects.</li>
-      <li>Import and export CSV, JSON, and SQL, and take snapshots.</li>
-      <li>Compare schemas, then sync or clone one database into another.</li>
-      <li>Passwords stay in Keychain. The app has no analytics or telemetry.</li>
-    </ul>
-
-    <figure>
-      <div class="frame clip" role="img" aria-label="Placeholder for a short video of SwiftDB.">
-        <span>Video</span>
-      </div>
-      <figcaption>Placeholder — replace later</figcaption>
-    </figure>
+    <div class="wrap">
+      <h2>What you can do</h2>
+      <ul class="points">
+        <li>Each connection opens in a native macOS window tab.</li>
+        <li>Browse tables, edit structure, and run SQL in document tabs.</li>
+        <li><kbd>⌘K</kbd> searches commands, connections, and database objects.</li>
+        <li>Import and export CSV, JSON, and SQL, and take snapshots.</li>
+        <li>Compare schemas, then sync or clone one database into another.</li>
+        <li>Passwords stay in Keychain. The app has no analytics or telemetry.</li>
+      </ul>
+    </div>
   </main>
   <footer class="site-footer">
     <div class="wrap bar">
