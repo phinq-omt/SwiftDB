@@ -38,6 +38,7 @@
       <a class="brand" href="./"><img src="assets/mark.svg" width="28" height="28" alt="">SwiftDB</a>
       <nav aria-label="Main">
         <ul>
+          <li><a href="#features">Features</a></li>
           <li><a href="install/">Install</a></li>
           <li><a href="privacy/">Privacy</a></li>
           <li><a href="support/">Support</a></li>
@@ -77,22 +78,62 @@
       <figcaption>Lumen Atelier, the sample database: browse orders, run SQL, then jump with ⌘K.</figcaption>
     </figure>
 
-    <div class="wrap">
-      <h2>What you can do</h2>
-      <ul class="points">
-        <li>Each connection opens in a native macOS window tab.</li>
-        <li>Browse tables, edit structure, and run SQL in document tabs.</li>
-        <li><kbd>⌘K</kbd> searches commands, connections, and database objects.</li>
-        <li>Import and export CSV, JSON, and SQL, and take snapshots.</li>
-        <li>Compare schemas, then sync or clone one database into another.</li>
-        <li>Passwords stay in Keychain. The app has no analytics or telemetry.</li>
-      </ul>
+    <div class="wrap features" id="features">
+      <section>
+        <h2>Connections and documents</h2>
+        <p>Each connection opens in a native macOS window tab. A table, view, or SQL document has its own tab and keeps its filters and editor state. <kbd>⌘K</kbd> searches commands, connections, and database objects.</p>
+      </section>
+      <section>
+        <h2>Tables</h2>
+        <p>Sort from a column header, filter rows, and page through results. Smart cells show JSON objects and arrays as compact text in the grid and as formatted JSON when you inspect them, plus checkboxes, date pickers, and foreign-key links. Row edits stay in a draft until you commit them with <kbd>⌘S</kbd>.</p>
+      </section>
+      <section>
+        <h2>Schema</h2>
+        <p>Tables open as Data, Structure, and Indexes. Column and index edits are marked added, edited, or deleted, then reviewed in SQL Preview before you commit. Schema Diagram draws tables and foreign keys.</p>
+      </section>
+      <section>
+        <h2>Queries</h2>
+        <p>Run the selection, or the whole editor when nothing is selected. Query history and saved queries reopen SQL without running it. The editor suggests tables, columns, and keywords. Explain opens a Visual Execution Plan.</p>
+      </section>
+      <section>
+        <h2>Redis</h2>
+        <p>Redis and Valkey browse a SCAN-paged keyspace and edit each key by type, including TTL, rename, and delete. A RESP console shares query history and saved commands. Import and export use <code>.redis</code> command files.</p>
+      </section>
+      <section>
+        <h2>MongoDB</h2>
+        <p>Connect to a standalone server, multiple hosts, or Atlas with an SRV URI. Filters, sorts, and edits use Extended JSON. Aggregation documents take an Extended JSON pipeline.</p>
+      </section>
+      <section>
+        <h2>Firebase</h2>
+        <p>Cloud Firestore browses collections, documents, and subcollections with typed JSON, so timestamps and references keep their types. Realtime Database browses child paths and writes with ETags so a stale edit is rejected.</p>
+      </section>
+      <section>
+        <h2>Cloudflare R2</h2>
+        <p>One connection is one bucket, browsed as folders. Text and images can be previewed in the app. Large uploads use multipart transfer. A Read Only profile blocks upload, rename, and delete.</p>
+      </section>
+      <section>
+        <h2>Import, export, and snapshots</h2>
+        <p>Export the loaded rows as CSV, JSON, or SQL. Import a CSV file into a table, or run a SQL file or SQL dump. A snapshot writes rows to a file you choose. Restore picks tables and either replaces existing rows or appends them. Snapshots do not include schema; the table must already exist.</p>
+      </section>
+      <section>
+        <h2>Compare and sync</h2>
+        <p>Schema Diff compares two connections that use the same engine. Sync Database compares structure and rows, then applies the changes you select. You can also clone one database into another.</p>
+      </section>
+      <section>
+        <h2>Database Tools</h2>
+        <p>On SQLite, PostgreSQL, MySQL, and MariaDB, Overview shows table sizes. Activity charts insert, update, and delete trends estimated from timestamp columns; it is not an audit log. Trace follows a value across related tables. Email finds invalid addresses, or replaces domains on your Mac before anything is written.</p>
+      </section>
+      <section>
+        <h2>On your Mac</h2>
+        <p>Passwords and SSH passphrases stay in Keychain. SwiftDB has no analytics or telemetry. The app talks only to the databases, SSH hosts, and local tools you choose.</p>
+      </section>
     </div>
   </main>
   <footer class="site-footer">
     <div class="wrap bar">
       <nav aria-label="Footer">
         <ul>
+          <li><a href="#features">Features</a></li>
           <li><a href="install/">Install</a></li>
           <li><a href="privacy/">Privacy</a></li>
           <li><a href="support/">Support</a></li>
